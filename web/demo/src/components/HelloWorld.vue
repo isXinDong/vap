@@ -5,6 +5,7 @@
     <button :class="[!access && 'disable']" @click.stop="play(1)">play(有融合)</button>
     <button v-if="vap" @click.stop="playContinue()">continue</button>
     <button v-if="vap" @click.stop="pause()">pause</button>
+    <img src="/1.jpg" />
   </div>
 </template>
 
@@ -46,8 +47,8 @@ export default {
         // 播放起始时间点(秒)
       }, flag ? {
         // 融合信息（图片/文字）,同素材生成工具生成的配置文件中的srcTag所对应，比如[imgUser] => imgUser
-        imgUser: '//shp.qlogo.cn/pghead/Q3auHgzwzM6TmnCKHzBcyxVPEJ5t4Ria7H18tYJyM40c/0',
-        imgAnchor: '//shp.qlogo.cn/pghead/PiajxSqBRaEKRa1v87G8wh37GibiaosmfU334GBWgk7aC8/140',
+        imgUser: '1.jpg',
+        imgAnchor: '5.jpg',
         textUser: 'user1',
         textAnchor: 'user2',
         type: 2
